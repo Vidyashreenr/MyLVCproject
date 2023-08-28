@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="css/index.css">
+
+  <script>
+      function fun1(){
+           var name = document.getElementById("text1").value;
+           var email = document.getElementById("text2").value;
+           var Designation = document.getElementById("text3").value;
+           if(name==="" || email===""||Designation==="")
+           {
+            alert("pls fillll..!");
+            return false;
+           }
+           else{
+            alert("form submitted succefully");
+            return true;
+           }
+
+      }
+
+    </script>
+</head>
+<body >
+
+    <header class="header"><h1 style="color:rgb(163, 128, 128)"> <center>Live Virtual Class</center> </h1></header>
+    <nav class="navbar">
+    <hr>
+        <ul type = "none">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="All courses.html">All Courses</a></li>
+            <li><a href="Registrations.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Contact.html" >Contact Us</a></li>
+        </ul>
+    <hr>
+    </nav>
+    <nav>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62127.22016101562!2d77.49539753315776!3d13.29098527056872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1de38e96323a3%3A0xbf906b32e5d81163!2sDoddaballapura%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1692717247992!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class = "hot1">
+                Contact Us
+            
+                    
+                    <form name="form1" method="get" onsubmit="return fun1()" action="thanks.html" >
+                        
+                        Name <input type="text"  id="text1"><br>
+                        Designation <input type="text" id="text2"><br>
+                        Salary<input type="text"  id="text3"><br>
+                        <input type="submit">
+            </form>
+        </div>
+            </nav>
+    </nav>
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
+</body>
+</html>

@@ -1,0 +1,223 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+
+    text-decoration: none;
+
+    color: rgb(11, 10, 11);
+
+}
+
+ 
+
+nav ul li{
+
+    display: inline;
+
+    margin:25px;
+
+}
+
+ 
+
+nav{
+
+    box-sizing: border-box;
+
+    outline-style: solid;
+
+    background-color: rgb(221, 231, 237);
+
+
+ 
+
+}
+
+
+ 
+
+img{
+
+    height: 130px;
+
+    width: 200px;
+
+    border-radius: 5px;
+
+}
+
+ 
+
+.images{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    height: 300px;
+
+
+}
+
+ 
+
+img:hover{
+
+    cursor: pointer;
+
+}
+
+
+a:hover{
+    color:rgb(238, 14, 14);
+}
+
+
+.form1{
+
+    box-shadow: 10px 10px 5px grey;
+
+    outline-style:double;
+
+    outline-color: none;
+
+    background-color: lightgray;
+
+
+}
+
+#cool{
+    background-color: skyblue;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+.courses{
+    padding-top: 30px;
+
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:200px;
+}
+
+.gottt{
+    height: 100%;
+    width: 90px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#cool {
+    font-size: 12px;
+
+}
+
+.image-gallery {
+    width:1000px;
+    height: 100px;
+}
+
+.hint{
+    width:1000px;
+    height: 100px;
+}
+
+.imm{
+    width:1000px;
+    height: 100px;
+}
+
+.hot{
+    width: 100px;
+    height: 50px;
+    background: rgb(177, 156, 156);
+    transition: width 2s;	
+}
+
+.make{
+    background-image: url(./images/OIP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hot1{
+
+
+ position: absolute;
+
+    top: 5cm;
+
+    right: 5cm;
+
+    left: 1;
+
+    padding-right: 0.5cm;
+
+    z-index: 1;
+
+}
+
+.rest{
+
+}

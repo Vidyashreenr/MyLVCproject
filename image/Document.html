@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5501/lvc.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/index.css">
+    <script>
+        function fun3() {
+            var Maths = parseInt(document.getElementById("m1").value);
+            var Science = parseInt(document.getElementById("s1").value);
+            var Computer = parseInt(document.getElementById("c1").value);
+            
+            var totalMarks =  Maths+ Science +Computer ;
+
+            document.getElementById("totalMarks").innerText = totalMarks;
+
+
+            // alert(totalMarks)
+            
+        }
+
+        // document.getElementById("totalMarks").textContent = totalMarks;
+        // document.getElementById("averageMarks").textContent = averageMarks.toFixed(2);
+
+
+    </script>
+</head>
+<body>
+
+<header class="header"><h1 style="color:rgb(22, 94, 142)"> <center></center>
+
+        <center><canvas id="myCanvas" width="1000" height="100" style="border:15px solid #b3c6c7;"></canvas></center></h1>
+   
+    
+   
+   <script>
+   
+   var c=document.getElementById("myCanvas");
+   
+   var ctx=c.getContext("2d");
+   
+   ctx.font="40px Arial";
+   
+   ctx.strokeText("Live Virtual Class",380,65);
+   
+   </script>
+
+<nav class="navbar">
+    <hr>
+    <ul type="none">
+        <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5501/All%20courses.html">All Courses</a></li>
+        <li><a href="http://127.0.0.1:5501/Registrations.html">Registration</a></li>
+        <li><a href="http://127.0.0.1:5501/gallery.html">Gallery</a></li>
+        <li><a href="http://127.0.0.1:5501/lvc.html">LVC result</a></li>
+        <li><a href="http://127.0.0.1:5501/Contact.html">Contact Us</a></li>
+
+    </ul>
+    <hr>
+</nav>
+<nav class="rest">
+    <h1>Student Result</h1>
+    <form name="form1" method="get" onsubmit="return fun3()">
+        Name <input type="text">
+        Marks:
+       <pre>Maths<input type="text" id="m1"> Science<input type="text" id="s1"> Computer<input type="text" id="c1"></pre> 
+       Results:
+       <pre>Total Marks<span id="totalMarks"></span> Max Marks<input type="text" id="mm"> % of marks<input type="text"></pre>
+
+       <input type="button" value="Result" onclick="return fun3()">
+
+       
+
+
+    </form>
+</nav>
+
+
+<footer>
+    <div id="cool">
+        <p>Developed and Designed By: Vidyashree N R</p>
+    </div>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</header></body></html>
